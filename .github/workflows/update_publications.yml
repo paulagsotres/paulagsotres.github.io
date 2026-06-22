@@ -1,0 +1,33 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"  # cada lunes
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Build publications
+        run: python scripts/build_publications.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "pub-updater"
+          git config --global user.email "bot@github.com"
+          git add _publications/
+          git commit -m "Update publications" || echo "No changes"
+          git push

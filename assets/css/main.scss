@@ -1,0 +1,234 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+/* ================= HERO BANNER ================= */
+.hero {
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: white;
+  color: #0f172a;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e2e8f0;
+}
+/* ================= ABOUT ================= */
+
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.about-photo {
+  width: 30%;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #39C2CF;
+}
+
+.about-text {
+  width: 70%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  border-left: 6px solid #603287;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(57, 194, 207, 0.15);
+  color: #603287;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* bloques tipo paper/lab */
+.page__content p,
+.page__content li {
+  color: #d8d8d8;
+  line-height: 1.7;
+}
+
+
+
+/* ================= NAVBAR BLACK FIX ================= */
+
+/* fondo general */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.site-header {
+  background: #000 !important;
+}
+
+/* blur opcional (solo uno) */
+.masthead {
+  background: rgba(0,0,0,0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* eliminar cajas blancas */
+.visible-links,
+.visible-links li,
+.masthead__menu-item,
+.greedy-nav li {
+  background: transparent !important;
+}
+
+/* links */
+.masthead a,
+.greedy-nav a {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+/* hover */
+.masthead a:hover,
+.greedy-nav a:hover {
+  color: #7c3aed !important;
+}
+
+/* quitar sombras o “cards” */
+.masthead__menu-item a,
+.greedy-nav li a {
+  box-shadow: none !important;
+}
+
+
+.page__footer {
+  background: #000 !important;
+  color: #777 !important;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.page__footer a {
+  color: #999 !important;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+.page__content,
+.initial-content,
+.splash .page__content {
+  padding-top: 0 !important;
+}
+
+hr {
+  border: none !important;
+  height: 1px;
+  background: rgba(255,255,255,0.05) !important;
+}
+
+h1, h2, h3 {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.about-text h2 {
+  font-weight: 700 !important;
+}
+
+.about-text h2 {
+  margin-top: 0 !important;
+}
+
+
+.masthead,
+.page__footer {
+  border: none !important;
+}

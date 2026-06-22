@@ -1,0 +1,133 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: false
+---
+
+<style>
+.timeline {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* ITEM */
+.item {
+  border-left: 2px solid #ddd;
+  padding-left: 22px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* DOT */
+.item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #9bdda1;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 8px;
+}
+
+/* DATE */
+.date {
+  font-size: 18px;
+  font-weight: 700;
+  color: #88dda8;
+  margin-bottom: 3px;
+}
+
+/* JOURNAL */
+.journal {
+  font-size: 13px;
+  color: #86b2eb;
+  margin-bottom: 4px;
+}
+
+/* TITLE */
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* AUTHORS (menos transparente como pediste) */
+.authors {
+  font-size: 14px;
+  color: #616161;   /* 👈 antes #444 */
+  opacity: 0.95; /* 👈 más visible */
+  margin-bottom: 6px;
+}
+
+/* DOI */
+.doi a {
+  font-size: 13px;
+  color: #784099;
+  text-decoration: none;
+}
+
+.doi a:hover {
+  text-decoration: underline;
+}
+
+/* YOUR NAME HIGHLIGHT */
+.highlight-name {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ffffff;
+}
+</style>
+
+<div class="timeline">
+
+{% assign pubs = site.publications | sort: "date" | reverse %}
+
+{% for p in pubs %}
+  <div class="item">
+
+    <!-- DATE -->
+    <div class="date">
+      {{ p.date | date: "%Y-%m-%d" }}
+    </div>
+
+    <!-- JOURNAL -->
+    {% if p.journal %}
+      <div class="journal">{{ p.journal }}</div>
+    {% endif %}
+
+    <!-- TITLE -->
+    <div class="title">{{ p.title }}</div>
+
+    <!-- AUTHORS (LIQUID FIX, NO JS NEEDED) -->
+    {% if p.authors %}
+
+      {% assign authors_clean = p.authors %}
+
+      {% assign authors_clean = authors_clean | replace: "‐", "-" | replace: "-", "-" %}
+
+      {% assign authors_clean = authors_clean
+        | replace: "Paula Gómez-Sotres", "<span class='highlight-name'>Paula Gómez-Sotres</span>"
+        | replace: "Paula Gomez-Sotres", "<span class='highlight-name'>Paula Gómez-Sotres</span>"
+      %}
+
+      <div class="authors">
+        {{ authors_clean }}
+      </div>
+
+    {% endif %}
+
+    <!-- DOI -->
+    {% if p.doi and p.doi != "NA" %}
+      <div class="doi">
+        <a href="https://doi.org/{{ p.doi }}" target="_blank">
+          https://doi.org/{{ p.doi }}
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+{% endfor %}
+
+</div>
