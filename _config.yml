@@ -24,9 +24,9 @@ author:
   avatar           : "me.jpg"
   name             : "Paula Gomez Sotres"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : ""
   location         : "Barcelona, Spain"
-  employer         : "Hospi"
+  employer         : "Hospital del Mar Research Institute"
   uri              : # URL
   email            : "pgomez@researchmar.net" 
 
