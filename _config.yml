@@ -24,15 +24,9 @@ author:
   avatar           : "me.jpg"
   name             : "Paula Gomez Sotres"
   pronouns         : # example: "she/her"  
-<<<<<<< HEAD
   bio              : "Behavioral Neuroscientist with a whole brain approach"
   location         : "Barcelona, Spain"
   employer         : "Hospital del Mar Research<br>Institute (HMRIB)"
-=======
-  bio              : ""
-  location         : "Barcelona, Spain"
-  employer         : "Hospital del Mar Research Institute"
->>>>>>> fbdd42aa5acc019b837e2149e2155f61722553b2
   uri              : # URL
   email            : "pgomez@researchmar.net" 
 
@@ -55,21 +49,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-<<<<<<< HEAD
   github           : paulagsotres
-=======
-  github           : "paulagsotres"
->>>>>>> fbdd42aa5acc019b837e2149e2155f61722553b2
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-<<<<<<< HEAD
-  bluesky          : # Username # Replace this with you Bluesky username
-=======
-  bluesky          : # Username
->>>>>>> fbdd42aa5acc019b837e2149e2155f61722553b2
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
