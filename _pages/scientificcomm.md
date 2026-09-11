@@ -154,7 +154,7 @@ author_profile: true
 
 .scicomm-banner-img {
   width: 80%;
-  height: 80%;
+  height: 8si0%;
   border-radius: 0;
   box-shadow: none;
   object-fit: cover;
