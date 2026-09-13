@@ -1119,8 +1119,8 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="0">
           <div class="bubble-content">
-            <img src="/images/card1.png" alt="Lab Visits" class="bubble-image">
-            <div class="bubble-text">Lab Visits</div>
+            <img src="/images/card1.png" alt="Talks" class="bubble-image">
+            <div class="bubble-text">Talks</div>
           </div>
         </button>
       </div>
@@ -1128,8 +1128,8 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="1">
           <div class="bubble-content">
-            <img src="/images/card2.png" alt="Workshops" class="bubble-image">
-            <div class="bubble-text">Workshops</div>
+            <img src="/images/card2.png" alt="Highschool Workshops" class="bubble-image">
+            <div class="bubble-text">Highschool Workshops</div>
           </div>
         </button>
       </div>
@@ -1137,8 +1137,8 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="2">
           <div class="bubble-content">
-            <img src="/images/card3.png" alt="Social Media" class="bubble-image">
-            <div class="bubble-text">Social Media</div>
+            <img src="/images/card3.png" alt="Public events" class="bubble-image">
+            <div class="bubble-text">Public events</div>
           </div>
         </button>
       </div>
@@ -1146,8 +1146,8 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="3">
           <div class="bubble-content">
-            <img src="/images/card4.png" alt="Public Talks" class="bubble-image">
-            <div class="bubble-text">Public Talks</div>
+            <img src="/images/card4.png" alt="Social Media" class="bubble-image">
+            <div class="bubble-text">Social Media</div>
           </div>
         </button>
       </div>
@@ -1155,8 +1155,9 @@ svg.network-lines {
       <div class="bubble-container-center">
         <button class="bubble-button" data-id="4">
           <div class="bubble-content">
-            <img src="/images/card5.png" alt="Interactive Workshops" class="bubble-image">
-            <div class="bubble-text">Workshops</div>
+            <img src="/images/card5.png" alt="Soon" 
+            class="bubble-image">
+            <div class="bubble-text">Coming soon</div>
           </div>
         </button>
       </div>
