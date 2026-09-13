@@ -9,7 +9,10 @@ author_profile: true
 <div class="hero-banner">
   <div class="hero-content">
     <img src="/images/white.png" class="hero-logo" alt="logo">
-    <h1 class="hero-title">Paula Gómez-Sotres</h1>
+    <h1 class="hero-title">
+      <span class="hero-firstname">Paula</span>
+      <span class="hero-lastname">Gómez-Sotres</span>
+    </h1>
     <p class="hero-subtitle">
       Social Behavior · Systems Neuroscience · Science Communication
     </p>
@@ -181,7 +184,7 @@ author_profile: true
 <!-- ================= STYLES ================= -->
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
@@ -229,6 +232,21 @@ author_profile: true
   line-height: 1.1;
 }
 
+.hero-firstname {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: inline;
+  color: #ffffff;
+}
+
+.hero-lastname {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline;
+}
+
 .hero-subtitle {
   font-size: 0.8rem;
   opacity: 0.95;
@@ -263,7 +281,7 @@ author_profile: true
   width: 100%;
   position: relative;
   margin-bottom: 18px;
-  border: 1px solid rgba(70, 184, 184, 0.25);
+  border: 1px solid rgba(177, 59, 255, 0.25);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -309,12 +327,12 @@ author_profile: true
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(70, 184, 184, 0.1);
+  background: rgba(177, 59, 255, 0.1);
   color: #46b8b8 !important;
   transition: all 0.3s ease;
   font-size: 15px;
   text-decoration: none;
-  border: 1px solid rgba(70, 184, 184, 0.25);
+  border: 1px solid rgba(177, 59, 255, 0.25);
 }
 
 .social-icon-about:hover {
@@ -322,7 +340,7 @@ author_profile: true
   color: #000000 !important;
   border-color: #46b8b8;
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(70, 184, 184, 0.25);
+  box-shadow: 0 6px 16px rgba(177, 59, 255, 0.25);
 }
 
 /* ABOUT TEXT */
@@ -331,7 +349,7 @@ author_profile: true
   background: #000000;
   border-radius: 8px;
   padding: 28px;
-  border: 1px solid rgba(70, 184, 184, 0.15);
+  border: 1px solid rgba(177, 59, 255, 0.15);
   border-left: 2px solid #46b8b8;
 }
 
@@ -341,6 +359,7 @@ author_profile: true
   margin-bottom: 18px;
   font-weight: 700;
   letter-spacing: -0.3px;
+  font-family: 'Fraunces', serif;
 }
 
 .about-text p {
@@ -349,19 +368,20 @@ author_profile: true
   margin-bottom: 14px;
   color: #c8c8c8;
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about-text a {
   color: #46b8b8;
   text-decoration: none;
-  border-bottom: 1px solid rgba(70, 184, 184, 0.3);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.3);
   transition: all 0.3s ease;
   font-weight: 500;
 }
 
 .about-text a:hover {
-  color: #56d8d8;
-  border-bottom-color: #56d8d8;
+  color: #46b8b8;
+  border-bottom-color: #46b8b8;
 }
 
 .about-text em {
@@ -371,7 +391,7 @@ author_profile: true
 }
 
 .about-text strong {
-  color: #9d4edd;
+  color: #46b8b8;
   font-weight: 700;
 }
 
@@ -382,7 +402,7 @@ author_profile: true
   gap: 8px;
   margin-top: 18px;
   padding-top: 16px;
-  border-top: 1px solid rgba(70, 184, 184, 0.12);
+  border-top: 1px solid rgba(177, 59, 255, 0.12);
 }
 
 .badge {
@@ -398,15 +418,15 @@ author_profile: true
 }
 
 .badge-teal {
-  background: rgba(70, 184, 184, 0.1);
+  background: rgba(177, 59, 255, 0.1);
   color: #46b8b8;
-  border-color: rgba(70, 184, 184, 0.25);
+  border-color: rgba(177, 59, 255, 0.25);
 }
 
 .badge-teal:hover {
-  background: rgba(70, 184, 184, 0.15);
+  background: rgba(177, 59, 255, 0.15);
   border-color: #46b8b8;
-  box-shadow: 0 3px 8px rgba(70, 184, 184, 0.15);
+  box-shadow: 0 3px 8px rgba(177, 59, 255, 0.15);
 }
 
 
@@ -421,6 +441,7 @@ author_profile: true
   margin: 0 0 16px 0;
   font-weight: 700;
   letter-spacing: -0.2px;
+  font-family: 'Fraunces', serif;
 }
 
 .publications-floating-grid {
@@ -431,7 +452,7 @@ author_profile: true
 
 .pub-floating-card {
   padding: 8px 0;
-  border-bottom: 1px solid rgba(70, 184, 184, 0.1);
+  border-bottom: 1px solid rgba(177, 59, 255, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -448,6 +469,7 @@ author_profile: true
   line-height: 1.2;
   margin: 0 0 2px 0;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pub-floating-authors {
@@ -456,6 +478,7 @@ author_profile: true
   line-height: 1.15;
   margin: 0 0 1px 0;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pub-floating-meta {
@@ -463,6 +486,7 @@ author_profile: true
   font-size: 0.5rem;
   margin: 0 0 5px 0;
   display: inline;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pub-floating-link {
@@ -476,7 +500,7 @@ author_profile: true
 }
 
 .pub-floating-link:hover {
-  color: #56d8d8;
+  color: #46b8b8;
 }
 
 
@@ -484,7 +508,7 @@ author_profile: true
 .projects-section {
   margin-top: 60px;
   padding: 0 0 60px 0;
-  border-bottom: 1px solid rgba(70, 184, 184, 0.1);
+  border-bottom: 1px solid rgba(177, 59, 255, 0.1);
 }
 
 .projects-section h2 {
@@ -493,6 +517,7 @@ author_profile: true
   margin-bottom: 28px;
   font-weight: 700;
   letter-spacing: -0.3px;
+  font-family: 'Fraunces', serif;
 }
 
 .projects-grid {
@@ -519,6 +544,7 @@ author_profile: true
   margin: 0;
   font-weight: 700;
   line-height: 1.3;
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-status {
@@ -534,15 +560,15 @@ author_profile: true
 }
 
 .project-status.active {
-  background: rgba(70, 184, 184, 0.15);
+  background: rgba(177, 59, 255, 0.15);
   color: #46b8b8;
-  border: 1px solid rgba(70, 184, 184, 0.3);
+  border: 1px solid rgba(177, 59, 255, 0.3);
 }
 
 .project-status.in-progress {
-  background: rgba(100, 200, 200, 0.15);
-  color: #60c8c8;
-  border: 1px solid rgba(100, 200, 200, 0.3);
+  background: rgba(57, 255, 20, 0.15);
+  color: #46b8b8;
+  border: 1px solid rgba(57, 255, 20, 0.3);
 }
 
 .project-card {
@@ -552,6 +578,12 @@ author_profile: true
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid rgba(177, 59, 255, 0.15);
+}
+
+.project-card:hover {
+  border-color: #46b8b8;
+  box-shadow: 0 0 20px rgba(177, 59, 255, 0.1);
 }
 
 .project-gif {
@@ -583,12 +615,13 @@ author_profile: true
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 
 .know-more-btn:hover {
   background: #46b8b8;
   color: #000000;
-  box-shadow: 0 3px 8px rgba(70, 184, 184, 0.2);
+  box-shadow: 0 3px 8px rgba(177, 59, 255, 0.2);
 }
 
 .description-popup {
@@ -597,7 +630,7 @@ author_profile: true
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
   background: #000000;
-  border: 1px solid rgba(70, 184, 184, 0.25);
+  border: 1px solid rgba(177, 59, 255, 0.25);
   border-radius: 8px;
   padding: 16px;
   width: 280px;
@@ -620,6 +653,7 @@ author_profile: true
   font-size: 0.75rem;
   line-height: 1.5;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .description-popup em {
@@ -629,7 +663,7 @@ author_profile: true
 }
 
 .description-popup strong {
-  color: #9d4edd;
+  color: #46b8b8;
   font-weight: 700;
 }
 

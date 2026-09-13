@@ -138,8 +138,8 @@ author_profile: true
 
 .story-toggle:hover {
   background: rgba(177, 59, 255, 0.1);
-  border-color: #39FF14;
-  color: #39FF14;
+  border-color: #46b8b8;
+  color: #46b8b8;
 }
 
 .story-popup-overlay {
@@ -196,7 +196,7 @@ author_profile: true
 }
 
 .story-popup-close:hover {
-  color: #39FF14;
+  color: #46b8b8;
 }
 
 .story-popup h2 {
@@ -224,6 +224,19 @@ author_profile: true
   font-weight: 700;
 }
 
+.story-link {
+  color: #46b8b8;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(70, 184, 184, 0.3);
+  transition: all 0.2s;
+}
+
+.story-link:hover {
+  color: #B13BFF;
+  border-bottom-color: #B13BFF;
+}
+
 .scicomm-mission {
   margin-bottom: 80px;
 }
@@ -248,7 +261,7 @@ author_profile: true
 
 .aim-card:hover {
   background: rgba(177, 59, 255, 0.12);
-  border-color: #39FF14;
+  border-color: #46b8b8;
   box-shadow: 0 0 20px rgba(177, 59, 255, 0.1);
 }
 
@@ -304,7 +317,7 @@ author_profile: true
 
 .impact-card:hover {
   background: rgba(177, 59, 255, 0.15);
-  border-color: #39FF14;
+  border-color: #46b8b8;
   box-shadow: 0 0 20px rgba(177, 59, 255, 0.1);
 }
 
@@ -351,8 +364,21 @@ author_profile: true
   content: "→";
   position: absolute;
   left: 0;
-  color: #39FF14;
+  color: #46b8b8;
   font-weight: 700;
+}
+
+.impact-link {
+  color: #46b8b8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  border-bottom: 1px solid rgba(70, 184, 184, 0.3);
+}
+
+.impact-link:hover {
+  color: #B13BFF;
+  border-bottom-color: #B13BFF;
 }
 
 .impact-links {
@@ -375,7 +401,7 @@ author_profile: true
 }
 
 .social-link:hover {
-  color: #39FF14;
+  color: #46b8b8;
   text-decoration: underline;
 }
 
@@ -424,7 +450,152 @@ author_profile: true
 }
 
 .scicomm-activities {
+  margin-bottom: 200px;
+  padding-bottom: 40px;
+}
+
+.scicomm-gallery {
   margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+.scicomm-gallery h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.gallery-subtitle {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-track::-webkit-scrollbar-track {
+  background: rgba(177, 59, 255, 0.1);
+  border-radius: 3px;
+}
+
+.gallery-track::-webkit-scrollbar-thumb {
+  background: #B13BFF;
+  border-radius: 3px;
+}
+
+.gallery-track::-webkit-scrollbar-thumb:hover {
+  background: #46b8b8;
+}
+
+.gallery-slide {
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-snap-align: start;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid rgba(177, 59, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.gallery-image:hover {
+  border-color: #46b8b8;
+  box-shadow: 0 0 20px rgba(177, 59, 255, 0.2);
+}
+
+.gallery-caption {
+  color: #c8c8c8;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+  color: #888;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(177, 59, 255, 0.8);
+  border: none;
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.gallery-btn:hover {
+  background: #46b8b8;
+  color: #000000;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-btn-prev {
+  left: 16px;
+}
+
+.gallery-btn-next {
+  right: 16px;
+}
+
+.gallery-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gallery-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(177, 59, 255, 0.3);
+  border: 1px solid #B13BFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-indicator.active {
+  background: #B13BFF;
+  width: 24px;
+  border-radius: 5px;
 }
 
 .scicomm-activities h2 {
@@ -493,8 +664,8 @@ author_profile: true
 
 .bubble-button:hover {
   transform: scale(1.15);
-  border-color: #39FF14;
-  box-shadow: 0 0 50px rgba(57, 255, 20, 0.3);
+  border-color: #46b8b8;
+  box-shadow: 0 0 50px rgba(70, 184, 184, 0.3);
 }
 
 .bubble-content {
@@ -505,17 +676,19 @@ author_profile: true
   gap: 6px;
 }
 
-.bubble-emoji {
-  font-size: 36px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.bubble-image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .bubble-text {
   font-size: 10px;
-  color: #B13BFF;
+  color: #46b8b8;
   font-weight: 600;
   text-transform: uppercase;
   white-space: normal;
@@ -596,7 +769,7 @@ svg.network-lines {
 }
 
 .popup-close:hover {
-  color: #39FF14;
+  color: #46b8b8;
 }
 
 .popup-image {
@@ -637,11 +810,11 @@ svg.network-lines {
 
 .popup-link {
   display: inline-block;
-  color: #39FF14;
+  color: #46b8b8;
   text-decoration: none;
   font-weight: 600;
   font-size: 13px;
-  border-bottom: 1px solid rgba(57, 255, 20, 0.3);
+  border-bottom: 1px solid rgba(70, 184, 184, 0.3);
   transition: all 0.2s;
 }
 
@@ -681,6 +854,14 @@ svg.network-lines {
   .aims-grid {
     grid-template-columns: 1fr;
   }
+
+  .gallery-slide {
+    flex: 0 0 300px;
+  }
+
+  .gallery-image {
+    height: 240px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -693,6 +874,10 @@ svg.network-lines {
   }
 
   .scicomm-impact h2 {
+    font-size: 1.6rem;
+  }
+
+  .scicomm-gallery h2 {
     font-size: 1.6rem;
   }
 
@@ -715,9 +900,9 @@ svg.network-lines {
     height: 120px;
   }
 
-  .bubble-emoji {
-    font-size: 32px;
-    height: 40px;
+  .bubble-image {
+    width: 55px;
+    height: 55px;
   }
 
   .bubble-text {
@@ -748,16 +933,23 @@ svg.network-lines {
   .story-popup p {
     font-size: 0.9rem;
   }
-  .impact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .impact-stat {
-    font-size: 40px;
-  }
 
   .media-container {
     padding: 16px;
+  }
+
+  .gallery-slide {
+    flex: 0 0 280px;
+  }
+
+  .gallery-image {
+    height: 220px;
+  }
+
+  .gallery-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 
@@ -775,9 +967,9 @@ svg.network-lines {
     height: 110px;
   }
 
-  .bubble-emoji {
-    font-size: 28px;
-    height: 35px;
+  .bubble-image {
+    width: 50px;
+    height: 50px;
   }
 
   .bubble-text {
@@ -843,6 +1035,28 @@ svg.network-lines {
   .story-popup-close {
     font-size: 24px;
   }
+
+  .gallery-slide {
+    flex: 0 0 240px;
+  }
+
+  .gallery-image {
+    height: 190px;
+  }
+
+  .gallery-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .gallery-btn-prev {
+    left: 8px;
+  }
+
+  .gallery-btn-next {
+    right: 8px;
+  }
 }
 </style>
 
@@ -905,7 +1119,7 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="0">
           <div class="bubble-content">
-            <div class="bubble-emoji">🔬</div>
+            <img src="/images/card1.png" alt="Lab Visits" class="bubble-image">
             <div class="bubble-text">Lab Visits</div>
           </div>
         </button>
@@ -914,7 +1128,7 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="1">
           <div class="bubble-content">
-            <div class="bubble-emoji">🎓</div>
+            <img src="/images/card2.png" alt="Workshops" class="bubble-image">
             <div class="bubble-text">Workshops</div>
           </div>
         </button>
@@ -923,8 +1137,8 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="2">
           <div class="bubble-content">
-            <div class="bubble-emoji">📺</div>
-            <div class="bubble-text">Video Series</div>
+            <img src="/images/card3.png" alt="Social Media" class="bubble-image">
+            <div class="bubble-text">Social Media</div>
           </div>
         </button>
       </div>
@@ -932,7 +1146,7 @@ svg.network-lines {
       <div class="bubble-container">
         <button class="bubble-button" data-id="3">
           <div class="bubble-content">
-            <div class="bubble-emoji">🎤</div>
+            <img src="/images/card4.png" alt="Public Talks" class="bubble-image">
             <div class="bubble-text">Public Talks</div>
           </div>
         </button>
@@ -941,8 +1155,8 @@ svg.network-lines {
       <div class="bubble-container-center">
         <button class="bubble-button" data-id="4">
           <div class="bubble-content">
-            <div class="bubble-emoji">🧬</div>
-            <div class="bubble-text">Online Content</div>
+            <img src="/images/card5.png" alt="Interactive Workshops" class="bubble-image">
+            <div class="bubble-text">Workshops</div>
           </div>
         </button>
       </div>
@@ -950,7 +1164,46 @@ svg.network-lines {
   </div>
 </div>
 
-<div class="scicomm-impact">
+<div class="scicomm-gallery">
+  <div class="scicomm-container">
+    <h2><span class="neuro-text">gallery</span> <span class="forager-text">moments</span></h2>
+    <p class="gallery-subtitle">Swipe or scroll to explore outreach in action</p>
+    
+    <div class="gallery-wrapper">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide">
+          <img src="/images/gallery-1.jpg" alt="Lab Workshop" class="gallery-image">
+          <p class="gallery-caption">Interactive EEG workshop with students</p>
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="/images/gallery-2.jpg" alt="Science Week" class="gallery-image">
+          <p class="gallery-caption">Science Week event at Barcelona</p>
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="/images/gallery-3.jpg" alt="High School Talk" class="gallery-image">
+          <p class="gallery-caption">Career talk at IES La Serna</p>
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="/images/gallery-4.jpg" alt="Fête de la Science" class="gallery-image">
+          <p class="gallery-caption">Fête de la Science at Merignac Library</p>
+        </div>
+        
+        <div class="gallery-slide">
+          <img src="/images/gallery-5.jpg" alt="Community Event" class="gallery-image">
+          <p class="gallery-caption">Centro Cívico Pou de la Figuera workshop</p>
+        </div>
+      </div>
+      
+      <button class="gallery-btn gallery-btn-prev" id="galleryPrev">❮</button>
+      <button class="gallery-btn gallery-btn-next" id="galleryNext">❯</button>
+    </div>
+    
+    <div class="gallery-indicators" id="galleryIndicators"></div>
+  </div>
+</div>
   <div class="scicomm-container">
     <h2><span class="neuro-text">reach &</span> <span class="forager-text">impact</span></h2>
     
@@ -981,13 +1234,48 @@ svg.network-lines {
 
     <div class="impact-section">
       <h3>Outreach Publications & Media</h3>
-      <p class="impact-subsection-text">Featured in peer-reviewed science communication:</p>
       <ul class="impact-list">
-        <li><strong>Neuron Preview</strong> co-author (with Sara Mederos) — 2024</li>
-        <li><strong>Spanish Cannabinoid Society</strong> newsletter — featured (multiple times)</li>
-        <li><strong>2 book chapters</strong> on science communication & public engagement</li>
+        <li>
+          <strong><a href="https://www.cell.com/neuron/fulltext/S0896-6273(26)00382-X" target="_blank" class="impact-link">Who sets the brakes on anxiety? A role for astrocytic histamine 3 receptors</a></strong> — Neuron Preview co-author (with Sara Mederos) — 2026
+          <div class="impact-detail">
+            Commentary on <a href="https://www.cell.com/neuron/fulltext/S0896-6273(26)00045-0" target="_blank" class="impact-link">histamine signaling in astrocytes</a> · DOI: 10.1016/j.neuron.2026.05.011
+          </div>
+        </li>
+
+         <li>
+          <strong><a href="https://pro.inserm.fr/retour-sur-la-nuit-de-la-recherche-et-la-fete-de-la-science-2025-en-nouvelle-aquitaine" target="_blank" class="impact-link">Nuit de la Recherche & Fête de la Science 2025 — Nouvelle-Aquitaine</a></strong> — Workshop facilitator: "L'odeur des souvenirs"
+          <div class="impact-detail">
+             INSERM & Université de Bordeaux · Village des sciences, Médiathèque Michel Sainte-Marie, Mérignac · ~100 visitors
+          </div>
+        </li>
+        
+        <li>
+          <strong><a href="https://seic.es/wp-content/uploads/BoletinSEIC_86.pdf" target="_blank" class="impact-link">Los endocanabinoides astrocíticos y neuronales en el bulbo olfatorio cooperan con la señalización noradrenérgica para determinar las consecuencias sociales y cognitivas de la transmisión social del estrés</a></strong> — Commentary adapted for general public about my awarded research topic for the Spanish cannabinoid community
+          <div class="impact-detail">
+            Best Postdoctoral Oral Communication Award — 25th Annual SEIC Meeting, Madrid (2025) · Spanish Cannabinoid Society
+            <br><br>
+          </div>
+        </li>
+        <li>
+          <strong><a href="https://seic.es/wp-content/uploads/boletin_77.pdf" target="_blank" class="impact-link">Los astrocitos del bulbo olfatorio controlan la transmisión social del estrés y sus consecuencias cognitivas</a></strong> — Commentary adapted for general public about my awarded research topic for the Spanish cannabinoid community
+          <div class="impact-detail">
+            Best Predoctoral Oral Communication Award — 23rd Annual SEIC Meeting, Bordeaux (2023) · Spanish Cannabinoid Society
+            <br><br>
+          </div>
+        </li>
+        <li>
+          <strong><a href="https://doctorat.u-bordeaux.fr/actualites/prix-de-these-2025-Paula" target="_blank" class="impact-link">Université de Bordeaux Prix de Thèse 2025</a></strong> — "Biologie, Santé et Environnement"
+          <div class="impact-detail">
+            Doctoral research excellence award · Interview and feature story with the University
+          </div>
+        </li>
+        
+        <li><strong>2 book chapters</strong> about prosocial behaviors and mitochondria and endocannabinoids </li>
         <li>Speaking to diverse audiences: teenagers, high schoolers, retirees, families</li>
+
+       
       </ul>
+
     </div>
 
     <div class="impact-section">
@@ -1012,7 +1300,11 @@ svg.network-lines {
     
     <h2>The Beginning</h2>
     <p>
-      My passion for science communication was ignited at a particular event in 2012: "Universidad en la Calle" in Madrid, where a neuroscientist gave a talk on the street about the topic of endocannabinoids. That spark led me to create bioUAMcabreada on Twitter: a biology humor account that grew to nearly 3,000 followers. At university, everyone knew my "party trick" was talking about science. </p>
+      My passion for science communication was ignited at a particular event in 2012: "Universidad en la Calle" in Madrid, where a neuroscientist gave a talk on the street about the topic of endocannabinoids. That spark led me to create bioUAMcabreada on Twitter: a biology humor account that grew to nearly 3,000 followers. At university, everyone knew my "party trick" was talking about science. 
+    </p>
+    <p>
+      During my Erasmus Mundus Master's in Molecular and Cellular Neuroscience (Neurasmus program), I began my journey as a science communicator, managing the Neurasmus social media accounts and building my voice in science communication. Today, I'm recognized as a <a href="https://www.neurasmus.u-bordeaux.fr/student-life/alumni-success-stories/" target="_blank" rel="noopener noreferrer" class="story-link">NEURASMUS success story</a> — evidence of how the program shaped not just my science, but my mission to make it accessible to others.
+    </p>
     <p>
       At the beginning of my doctoral research in France, I realized something crucial: I could do science communication, but a language barrier was holding me back from reaching French audiences. So during by visits back home in Spain I visited two high schools (IES La Serna and IES Isaac Albéniz) where I gave talks blending my career path with my ongoing research. But here's what mattered: I spoke in Spanish. About my Erasmus journey (both undergraduate and Erasmus Mundus for my master's). About my research. About why science matters. And the connection was immediate. Students leaned in. Eyes lit up. These visits were crucial: they taught me that language is not a barrier—it's a bridge. When I communicated in Spanish, my native language, everything felt more authentic, more accessible, more real. 
     </p>
@@ -1045,14 +1337,86 @@ svg.network-lines {
 <script>
 function toggleStoryPopup() {
   const overlay = document.getElementById('storyPopupOverlay');
-  overlay.classList.toggle('active');
+  if (overlay) {
+    overlay.classList.toggle('active');
+  }
 }
 
-document.getElementById('storyPopupOverlay').addEventListener('click', (e) => {
-  if (e.target.id === 'storyPopupOverlay') {
-    toggleStoryPopup();
+// Wait for DOM to be ready
+setTimeout(() => {
+  const overlay = document.getElementById('storyPopupOverlay');
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target.id === 'storyPopupOverlay') {
+        toggleStoryPopup();
+      }
+    });
   }
-});
+}, 50);
+
+// Gallery functionality
+function initGallery() {
+  const track = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrev');
+  const nextBtn = document.getElementById('galleryNext');
+  const slides = document.querySelectorAll('.gallery-slide');
+  const indicatorsContainer = document.getElementById('galleryIndicators');
+  
+  let currentIndex = 0;
+  const slideWidth = 370; // 350px + 20px gap
+
+  // Create indicators
+  slides.forEach((_, idx) => {
+    const indicator = document.createElement('div');
+    indicator.className = 'gallery-indicator';
+    if (idx === 0) indicator.classList.add('active');
+    indicator.addEventListener('click', () => goToSlide(idx));
+    indicatorsContainer.appendChild(indicator);
+  });
+
+  function updateIndicators() {
+    document.querySelectorAll('.gallery-indicator').forEach((ind, idx) => {
+      ind.classList.toggle('active', idx === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = Math.max(0, Math.min(index, slides.length - 1));
+    track.scrollLeft = currentIndex * slideWidth;
+    updateIndicators();
+  }
+
+  prevBtn.addEventListener('click', () => {
+    goToSlide(currentIndex - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    goToSlide(currentIndex + 1);
+  });
+
+  // Track scroll for indicators
+  track.addEventListener('scroll', () => {
+    currentIndex = Math.round(track.scrollLeft / slideWidth);
+    updateIndicators();
+  });
+
+  // Touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  track.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchStartX - touchEndX > 50) {
+      goToSlide(currentIndex + 1);
+    } else if (touchEndX - touchStartX > 50) {
+      goToSlide(currentIndex - 1);
+    }
+  });
+}
 
 const activities = [
   {
@@ -1175,6 +1539,7 @@ document.getElementById('cardOverlay').addEventListener('click', closeCard);
 
 setTimeout(() => {
   drawConnections();
+  initGallery();
   window.addEventListener('resize', drawConnections);
 }, 100);
 </script>
